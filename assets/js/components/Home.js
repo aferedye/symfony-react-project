@@ -112,8 +112,9 @@ class Home extends Component {
                     </div>
                     <div className="profil--block" onMouseEnter={this.ProfilHover} onMouseLeave={this.ProfilBase} onClick={this.OpenConnectTuile}>
                         <img src={Compte} className="profil--icon" id="iconProfil"></img>
-                        <p className="profil--text" id="textProfil">Mon Compte</p>
-                        <div className="connect--tuile" id="connectTuile">
+                        <p className="profil--text" id="textProfil">Mon Compte</p>  
+                    </div>
+                    <div className="connect--tuile" id="connectTuile">
                             <div class="arrow-up"></div>
                             <h2>Se connecter</h2>
                             <form>
@@ -137,7 +138,6 @@ class Home extends Component {
                             <div className="separate"></div>
                             <Link className={"reinitmdp"} to={"/"}>Réinitialiser mon mot de passe</Link>
                         </div>
-                    </div>
                     <div className="panier--block" onMouseEnter={this.PanierHover} onMouseLeave={this.PanierBase}>
                         {/* Compteur d'articles */}
                         <img src={Panier} className="panier--icon" id="iconPanier"></img>
