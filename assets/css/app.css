@@ -1,21 +1,295 @@
+/* Fonts */
 
-.row-section{float:left; width:100%; background: #42275a;  /* fallback for old browsers */
+@font-face {
+    font-family: "RalewayLight";
+    src: url("../../public/fonts/Raleway/Raleway-Light.ttf") format("truetype");
 }
-.row-section h2{float:left; width:100%; color:#fff; margin-bottom:30px; font-size: 14px;}
-.row-section h2 span{font-family: 'Libre Baskerville', serif; display:block; font-size:45px; text-transform:none; margin-bottom:20px; margin-top:30px;font-weight:700;}
-.row-section h2 a{color:#d2abce;}
-.row-section .row-block{background:#fff; padding:20px; margin-bottom:50px;}
-.row-section .row-block ul{margin:0; padding:0;}
-.row-section .row-block ul li{list-style:none; margin-bottom:20px;}
-.row-section .row-block ul li:last-child{margin-bottom:0;}
-.row-section .row-block ul li:hover{cursor:grabbing;}
-.row-section .row-block .media{border:1px solid #d5dbdd; padding:5px 20px; border-radius: 5px; box-shadow:0px 2px 1px rgba(0,0,0,0.04); background:#fff;}
-.row-section .media .media-left img{width:75px;}
-.row-section .media .media-body p{padding: 0 15px; font-size:14px;}
-.row-section .media .media-body h4 {color: #6b456a; font-size: 18px; font-weight: 600; margin-bottom: 0; padding-left: 14px; margin-top:12px;}
-.btn-default{background:#6B456A; color:#fff; border-radius:30px; border:none; font-size:16px;}
-.fa-spin {
-    margin: 0 auto;}
-body {
-    background-color: lightgray;
+
+@font-face {
+    font-family: "RalewayBold";
+    src: url("../../public/fonts/Raleway/Raleway-Bold.ttf") format("truetype")
+}
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Classe menu de naviguation */
+
+nav {
+    width: 100%;
+    height: 145px;
+    font-family: "RalewayLight";
+    position: sticky;
+    top: 0;
+    background-color: rgb(23, 97, 29);
+}
+
+.link {
+    position: relative;
+    top: -10px;
+}
+
+.naviguation--list {
+    margin-top: 70px;
+    justify-content: space-evenly;
+}
+
+.naviguation--block {
+    justify-content: space-evenly;
+    width: 45%;
+}
+
+.naviguation--link {
+    list-style-type: none;
+}
+
+.link:hover {
+    color: #66BD5D;
+}
+
+.logo {
+    width: 175px;
+    padding-top: 37px;
+    padding-left: 25px;
+}
+
+.logo:hover {
+    transform: rotate3d(1, 2.0, 3.0, -15deg);
+    transition-duration: 1.5s;
+}
+
+.searchfield {
+    width: 275px;
+    height: 30px;
+    padding-left: 5px;
+    border-radius: 3px 24px 24px 3px;
+    font-family: 'RalewayLight';
+    border: 1px solid #66BD5D;
+}
+
+.searchfield:focus {
+    box-shadow: 0 0 3pt 2pt #66BD5D;
+    outline: none;
+}
+
+.searchlogo {
+    position: absolute;
+    width: 32px;
+    left: 250px;
+}
+
+.form--searchfield {
+    position: relative;
+    top: 25px;
+    left: 33%;
+}
+
+.navicon {
+    width: 35px;
+}
+
+.navtext {
+    margin-top: 6px;
+    margin-left: 7px;
+}
+
+.profil--block {
+    margin-left: 300px;
+    position: relative;
+    cursor: pointer;
+}
+
+.profil--icon {
+    width: 75px;
+    margin-top: 20px;
+}
+
+.profil--text {
+    margin-top: 5px;
+    margin-left: -10px;
+    color: white;
+}
+
+.panier--block {
+    position: relative;
+    cursor: pointer;
+    margin-left: 150px;
+}
+
+.panier--icon {
+    width: 75px;
+    margin-top: 20px;
+}
+
+.panier--text {
+    margin-top: 5px;
+    margin-left: -3px;
+    color: white;
+}
+
+.connect--tuile {
+    display: none;
+    position: absolute;
+    background-color: rgb(23, 97, 29);
+    width: 250px;
+    height: 400px;
+    top: 164px;
+    left: -85px;
+    border: 2px solid rgb(23, 97, 29);
+    border-radius: 15px;
+    box-shadow: 9px 10px 49px -9px rgba(23,97,29,1);
+}
+.connect--tuile > h2 {
+    width: max-content;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.field--blockMail {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.field--blockMdp {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.connect--field {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 25px;
+    border-radius: 25px;
+    border: 1px solid #66BD5D;
+    font-family: 'RalewayBold';
+}
+
+.connect--field:focus {
+    box-shadow: 0 0 3pt 2pt #66BD5D;
+    outline: none;
+}
+
+.icon--Mail {
+    position: absolute;
+    width: 25px;
+    left: 40px;
+    top: 99px;
+}
+
+.icon--Mdp {
+    position: absolute;
+    width: 25px;
+    left: 40px;
+    top: 160px;
+}
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-bottom: 20px solid rgb(23, 97, 29);
+    margin-top: -21px;
+    margin-left: 105px;
+}
+
+.separate {
+    width: 75%;
+    height: 1px;
+    background-color: #E9ECEF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.rememberme--checkbox {
+    margin-top: 15px;
+    margin-left: 47px;
+}
+.rememberme--label {
+    color: white;
+    margin-left: 5px;
+    font-family: 'RalewayLight';
+}
+
+.connect {
+    width: 125px;
+    height: 30px;
+    font-family: 'RalewayBold';
+    color: white;
+    background-color: rgb(23, 97, 29);
+    border: 1.5px solid white;
+    border-radius: 20px;
+    font-size: 1.2em;
+    margin-left: 65px;
+    margin-top: 20px;
+}
+.newaccount {
+    color: white;
+    text-decoration: none;
+    font-family: 'RalewayBold';
+    margin-left: 48px;
+}
+.newaccount:hover {
+    color: #66BD5D;
+}
+.reinitmdp {
+    color: white;
+    text-decoration: none;
+    font-family: 'RalewayBold';
+    margin-left: 8px;
+}
+.reinitmdp:hover {
+    color: #66BD5D;
+}
+.connect:hover {
+    color: #66BD5D;
+    border: 1.5px solid #66BD5D;
+}
+
+/* Page Accueil */
+.accueil--title {
+    text-align: center;
+    color: white;
+    font-family: 'RalewayBold';
+    margin-top: 50px;
+}
+
+
+/* Classe générique */
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+.flex {
+    display: flex;
+}
+
+.ml-25 {
+    margin-left: 200px;
+}
+
+.name {
+    background: linear-gradient(to right, blue, white, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2em;
+    margin-top: -8px;
+    font-family: "RalewayBold";
 }
