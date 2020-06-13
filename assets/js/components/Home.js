@@ -90,7 +90,7 @@ class Home extends Component {
 
     render() {
         return (
-            <div className="">
+            <div>
                 <nav className="flex">
                     <Link className={"link name"} to={"/"}> <img src={Logo} className="logo"></img> </Link>
                     <div className="naviguation--block" id="">
@@ -127,7 +127,7 @@ class Home extends Component {
                                     <img src={Mdp} className="icon--Mdp"></img>
                                 </div>
                                 <div>
-                                    <input type="checkbox" value="Connexion" className="rememberme--checkbox"></input><label className="rememberme--label">Se souvenir de moi</label>
+                                    <label for="remember" className="rememberme--label"><input type="checkbox" value="Connexion" name="remember" className="rememberme--checkbox" id="remember"></input>Se souvenir de moi</label>
                                 </div>
                                 <div>
                                     <input type="submit" value="Connexion" className="connect"></input>
