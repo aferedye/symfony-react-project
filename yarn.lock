@@ -886,6 +886,11 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@svg-maps/france.regions@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@svg-maps/france.regions/-/france.regions-1.1.1.tgz#790d801e4aa1f5f9db83faa737915d2cd2f9ac75"
+  integrity sha512-vK35OC1MoIZSfTBpi0gBH6hRax5uZ+164ywmKZstYNaLPzMKupdwUQe5Exrmp8EUL3GC53elUj6ebt1ANHX5gw==
+
 "@symfony/webpack-encore@^0.30.0":
   version "0.30.2"
   resolved "https://registry.yarnpkg.com/@symfony/webpack-encore/-/webpack-encore-0.30.2.tgz#8f9e871f2ec9ac43bad93e835d447670b6650de3"
@@ -2315,9 +2320,9 @@ decamelize@^1.2.0:
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 deep-equal@^1.0.1:
   version "1.1.1"
